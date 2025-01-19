@@ -1,0 +1,14 @@
+# Contributing
+
+Any contribution is welcomed, but they need to follow some rules :
+
+* Fix any clippy lint (errors and warning). Allowing some is acceptable but they should be rare
+  and have a comment explaining why it is allowed.
+
+* Please run `rustfmt` with the nightly flag so the import are group with
+  the granularity required.
+
+* Commit must follow [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
+  The commit type list is : `feat` ,`fix` ,`refactor` ,`style` ,`test` ,`docs` ,`build`.
+
+* If contribution need any dependencies, it should be opt-in feature, I tried to minimise dependencies.
