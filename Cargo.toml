@@ -1,0 +1,24 @@
+[package]
+name = "boulette"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[features]
+default = ["number"]
+number = ["dep:rust_decimal"]
+
+[lints]
+[clippy]
+print_stdout = "warn"
+print_stderr = "warn"
+unwrap_used = "deny"
+expect_used = "deny"
+
+[dependencies]
+rust_decimal = { version = "1", default-features = false, features = [
+    "std",
+], optional = true }
+
+[dev-dependencies]
+thiserror = "2"
